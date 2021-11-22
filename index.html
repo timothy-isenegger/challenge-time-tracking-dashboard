@@ -21,165 +21,168 @@
 <body>
 <div class="page">
   <div class="container">
-    <div class="card card--profile">
-      <div class="card__header">
-        <img src="./images/image-jeremy.png" alt="Profile picture" class="card__image">
-        <div class="card__headline">
-          <span>Report for</span>
-          <h1>Jeremy Robson</h1>
+    <div class="card-grid">
+      <!-- Card Profile -->
+      <div class="card card--profile">
+        <div class="card__header">
+          <img src="./images/image-jeremy.png" alt="Profile picture" class="card__image">
+          <div class="card__headline">
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="card__body">
+          <nav class="nav nav--statistics">
+            <button class="btn btn-link" data-cycle-type="daily">Daily</button>
+            <button class="btn btn-link active" data-cycle-type="weekly">Weekly</button>
+            <button class="btn btn-link" data-cycle-type="monthly">Monthly</button>
+          </nav>
         </div>
       </div>
-      <div class="card__body">
-        <nav class="nav nav--statistics">
-          <button class="btn btn-link" data-cycle-type="daily">Daily</button>
-          <button class="btn btn-link active" data-cycle-type="weekly">Weekly</button>
-          <button class="btn btn-link" data-cycle-type="monthly">Monthly</button>
-        </nav>
-      </div>
-    </div>
-    <!-- Card Work -->
-    <div class="card card--statistic">
-      <div class="card__header card__header--orange">
-        <img class="card__icon" src="./images/icon-work.svg">
-      </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Work
+      <!-- Card Work -->
+      <div class="card card--statistic">
+        <div class="card__header card__header--orange">
+          <img class="card__icon" src="./images/icon-work.svg">
         </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">5hrs</span>
-          <span class="active-cycle" data-cycle="weekly">32hrs</span>
-          <span class="" data-cycle="monthly">103hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;7hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;36hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;128hrs</span>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Work
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">5hrs</span>
+            <span class="active-cycle" data-cycle="weekly">32hrs</span>
+            <span class="" data-cycle="monthly">103hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;7hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;36hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;128hrs</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card Play -->
-    <div class="card card--statistic">
-      <div class="card__header card__header--blue">
-        <img class="card__icon" src="./images/icon-play.svg">
+      <!-- Card Play -->
+      <div class="card card--statistic">
+        <div class="card__header card__header--blue">
+          <img class="card__icon" src="./images/icon-play.svg">
+        </div>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Play
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">10hrs</span>
+            <span class="" data-cycle="monthly">23hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;2hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;8hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;29hrs</span>
+          </div>
+        </div>
       </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Play
-        </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">10hrs</span>
-          <span class="" data-cycle="monthly">23hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;2hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;8hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;29hrs</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Card Study -->
-    <div class="card card--statistic">
-      <div class="card__header card__header--red">
-        <img class="card__icon" src="./images/icon-study.svg">
+      <!-- Card Study -->
+      <div class="card card--statistic">
+        <div class="card__header card__header--red">
+          <img class="card__icon" src="./images/icon-study.svg">
+        </div>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Study
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">0hrs</span>
+            <span class="active-cycle" data-cycle="weekly">4hrs</span>
+            <span class="" data-cycle="monthly">13hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;7hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;19hrs</span>
+          </div>
+        </div>
       </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Study
-        </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">0hrs</span>
-          <span class="active-cycle" data-cycle="weekly">4hrs</span>
-          <span class="" data-cycle="monthly">13hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;7hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;19hrs</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Exercise -->
-    <div class="card card--statistic">
-      <div class="card__header card__header--green">
-        <img class="card__icon" src="./images/icon-exercise.svg">
+      <!-- Exercise -->
+      <div class="card card--statistic">
+        <div class="card__header card__header--green">
+          <img class="card__icon" src="./images/icon-exercise.svg">
+        </div>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Exercise
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">4hrs</span>
+            <span class="" data-cycle="monthly">11hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;5hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;18hrs</span>
+          </div>
+        </div>
       </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Exercise
-        </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">4hrs</span>
-          <span class="" data-cycle="monthly">11hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;5hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;18hrs</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Card Social -->
-    <div class="card card--statistic">
-      <div class="card__header card__header--violet">
-        <img class="card__icon" src="./images/icon-social.svg">
+      <!-- Card Social -->
+      <div class="card card--statistic">
+        <div class="card__header card__header--violet">
+          <img class="card__icon" src="./images/icon-social.svg">
+        </div>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Social
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">5hrs</span>
+            <span class="" data-cycle="monthly">11hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;3hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;10hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;23hrs</span>
+          </div>
+        </div>
       </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Social
-        </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">5hrs</span>
-          <span class="" data-cycle="monthly">11hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;3hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;10hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;23hrs</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Card Self Care-->
-    <div class="card card--statistic">
-      <div class="card__header card__header--yellow">
-        <img class="card__icon" src="./images/icon-self-care.svg">
+      <!-- Card Self Care-->
+      <div class="card card--statistic">
+        <div class="card__header card__header--yellow">
+          <img class="card__icon" src="./images/icon-self-care.svg">
+        </div>
+        <div class="card__body">
+          <div class="actual-hours__title">
+            Self Care
+          </div>
+          <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
+          <div class="actual-hours__value">
+            <span class="" data-cycle="daily">0hrs</span>
+            <span class="active-cycle" data-cycle="weekly">2hrs</span>
+            <span class="" data-cycle="monthly">7hrs</span>
+          </div>
+          <div class="prev-hours__value">
+            <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
+            <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;2hrs</span>
+            <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;11hrs</span>
+          </div>
+        </div>
       </div>
-      <div class="card__body">
-        <div class="actual-hours__title">
-          Self Care
-        </div>
-        <img class="menu-dots" src="images/icon-ellipsis.svg" alt="icon ellipsis">
-        <div class="actual-hours__value">
-          <span class="" data-cycle="daily">0hrs</span>
-          <span class="active-cycle" data-cycle="weekly">2hrs</span>
-          <span class="" data-cycle="monthly">7hrs</span>
-        </div>
-        <div class="prev-hours__value">
-          <span class="" data-cycle="daily">Last Week&nbsp;-&nbsp;1hrs</span>
-          <span class="active-cycle" data-cycle="weekly">Last Week&nbsp;-&nbsp;2hrs</span>
-          <span class="" data-cycle="monthly">Last Week&nbsp;-&nbsp;11hrs</span>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
 </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.timothy-isenegger.ch">Tim Isenegger</a>.
   </div>
   <script src="src/js/scripts.js" type="text/javascript"></script>
 </body>
