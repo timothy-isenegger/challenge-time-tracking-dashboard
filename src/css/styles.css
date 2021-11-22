@@ -74,8 +74,18 @@ h1 {
     margin: 0;
 }
 
+.btn {
+    background-color: var(--blue-pale);
+    border: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: white;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
 .card--profile .card__body {
-    padding: var(--spacer-large);
+    padding: calc(var(--spacer) * 1.25) var(--spacer-large);
 }
 
 .nav {
@@ -84,11 +94,12 @@ h1 {
     justify-content: space-between;
 }
 
-.nav > div {
+.btn-link {
+    background-color: transparent;
     color: var(--blue-desaturated);
 }
 
-.nav > div.active {
+.btn-link.active {
     color: white;
 }
 
@@ -110,6 +121,26 @@ h1 {
     background-color: var(--orange-light);
 }
 
+.card__header--blue {
+    background-color: var(--blue-soft);
+}
+
+.card__header--red {
+    background-color: var(--red-light);
+}
+
+.card__header--green {
+    background-color: var(--green-lime);
+}
+
+.card__header--violet {
+    background-color: var(--violet);
+}
+
+.card__header--yellow {
+    background-color: var(--orange-soft);
+}
+
 .card--statistic .card__body {
     border-radius: var(--spacer);
     padding: var(--spacer-large);
@@ -118,11 +149,19 @@ h1 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row-gap: 5px;
+}
+
+.menu-dots,
+.prev-hours__value {
+    justify-self: self-end;
 }
 
 .actual-hours__title {
-    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .actual-hours__value {
@@ -130,13 +169,18 @@ h1 {
     font-weight: 300;
 }
 
-.prev-hours {
+.prev-hours__value {
     font-weight: 300;
     font-size: 80%;
     color: var(--blue-pale);
-    display: flex;
 }
 
-.d-none {
+[data-cycle="daily"],
+[data-cycle="weekly"],
+[data-cycle="monthly"] {
     display: none;
+}
+
+.active-cycle {
+    display: block;
 }
