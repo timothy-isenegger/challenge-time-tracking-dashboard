@@ -187,6 +187,14 @@ h1 {
 
 /* Desktop Styles */
 @media (min-width: 1366px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
     .card-grid {
         display: grid;
         grid-template-rows: auto auto;
@@ -195,12 +203,42 @@ h1 {
     }
 
     .card--profile {
-        grid-row: 1 / 3
+        grid-row: 1 / 3;
+        display: flex;
+        flex-flow: column;
     }
-}
 
-@media (min-width: 1366px) {
-    .container {
-        max-width: 1200px;
+    .card--profile .card__header {
+        flex-flow: column;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
+    .card__image {
+        margin-bottom: var(--spacer);
+    }
+
+    .nav {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .btn-link {
+        margin-bottom: var(--spacer-small);
+    }
+
+    .card--statistic .card__body {
+        grid-template-rows: auto auto auto;
+    }
+
+    .actual-hours__value,
+    .prev-hours__value {
+        grid-column: 1 / 3;
+        justify-self: flex-start;
+    }
+
+    .actual-hours__value {
+        font-size: 3.4rem;
+        padding-top: var(--spacer-small);
     }
 }
